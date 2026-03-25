@@ -1,12 +1,10 @@
 # Project 1: Employee Management System #
-
 employees = []
 def add_employee():
     name = input("Enter name: ")
     age = int(input("Enter age: "))
     role = input("Enter role: ")
-    salary = float(input("Enter salary: "))
-    
+    salary = float(input("Enter salary: ")) 
     emp = {"name": name, "age": age, "role": role, "salary": salary}
     employees.append(emp)
 
@@ -25,7 +23,6 @@ def delete_employee():
     for emp in employees:
         if emp["name"] == name:
             employees.remove(emp)
-
 # menu
 while True:
     print("\n1.Add 2.Display 3.Update 4.Delete 5.Exit")
@@ -55,14 +52,12 @@ def report():
         grade = "c"
     else:
         grade = "D"
-
+        
     print(f"\nReport Card\nName: {name}\nTotal: {total}\nAverage: {avg:.2f}\nGrade: {grade}")
-
 report() 
 
 
 # Project 3: Shopping Cart System #
-
 cart = []
 
 def add_item():
@@ -239,3 +234,7 @@ while True:
         number_utils(n)
     except ValueError:
         print("Enter valid integer!")
+
+
+
+
